@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation("org.mindrot:jbcrypt:0.4")
     implementation("com.github.bumptech.glide:glide:5.0.5")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

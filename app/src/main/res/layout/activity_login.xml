@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginGLh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.2"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:id="@+id/loginName"
+        android:layout_width="190dp"
+        android:layout_height="90dp"
+        android:text="@string/app_name"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginGLh1"
+        android:fontFamily="@font/playfair"
+        android:textColor="@color/black"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/loginGLv1"
+        app:layout_constraintGuide_percent="0.2"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/loginGLv2"
+        app:layout_constraintGuide_percent="0.8"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginTILuserName"
+        app:layout_constraintTop_toBottomOf="@+id/loginName"
+        app:layout_constraintStart_toStartOf="@id/loginGLv1"
+        app:layout_constraintEnd_toEndOf="@id/loginGLv2"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/ic_person"
+        >
+        <EditText
+            android:id="@+id/loginUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="usuario"
+            android:inputType="textPersonName"
+
+            >
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginTILpassword"
+        app:layout_constraintTop_toBottomOf="@+id/loginTILuserName"
+        app:layout_constraintStart_toStartOf="@id/loginGLv1"
+        app:layout_constraintEnd_toEndOf="@id/loginGLv2"
+        android:layout_marginTop="10dp"
+        app:endIconDrawable="@drawable/ic_eye"
+        app:passwordToggleEnabled="true"
+        >
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="contraseña"
+            android:inputType="textPassword"
+            >
+
+        </EditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="401dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginTILpassword"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginTVRegister"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:text="Crear cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

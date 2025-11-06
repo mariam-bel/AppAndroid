@@ -34,12 +34,11 @@ public class SplashScreen extends AppCompatActivity {
 
         nombreApp = findViewById(R.id.splashAppName);
         nombreApp.startAnimation(fade);
-        splashLogo = findViewById(R.id.splashLogo);
-        splashLogo.startAnimation(fade);
+
 
         fondo = findViewById(R.id.splashImagenFondo);
         Glide.with(this)
-                .load("https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+                .load("https://images.unsplash.com/photo-1637750586228-179a1a7aef84?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687")
                 .transition(DrawableTransitionOptions.withCrossFade(1000))
                 .centerCrop()
                 .into(fondo);
@@ -51,7 +50,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run(){
-                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                Intent intent = new Intent(SplashScreen.this, Login.class);
                 startActivity(intent);
             }
         }, 2000);

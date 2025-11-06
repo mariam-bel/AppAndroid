@@ -5,5 +5,24 @@
     <color name="beige">#FFF7E6</color>
     <color name="marronClaro">#C4A484</color>
     <color name="dorado">#D6A85D</color>
-    <color name="rosaPastel">#F4C2C2</color>
+
+
+    <color name="azulPrimary">#445e91</color>
+    <color name="azulOnPrimary">#ffffff</color>
+    <color name="azulPrimaryContainer">#d8e2ff</color>
+    <color name="azulOnPrimaryContainer">#2b4678</color>
+    <color name="grisSecondary">#575e71</color>
+    <color name="grisOnSecondary">#ffffff</color>
+    <color name="grisSecondaryContainer">#dbe2f9</color>
+    <color name="grisOnSecondaryContainer">#3f4759</color>
+    <color name="moradoTertiary">#715573</color>
+    <color name="moradoOnTertiary">#ffffff</color>
+    <color name="moradoTertiaryContainer">#fbd7fc</color>
+    <color name="moradoOnterciaryContainer">#583e5b</color>
+    <color name="rojoError">#ba1a1a</color>
+    <color name="rojoOnError">#ffffff</color>
+    <color name="rojoErrorContainer">#ffdad6</color>
+    <color name="rojoOnErrorContainer">#93000a</color>
+
+
 </resources>

@@ -26,6 +26,13 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            String tiempo = String.valueOf(bundle.getLong("tiempoInvertido", 0));
+            mainTV.setText(tiempo+" ha tardado en llenar el login.");
+        }
+
         mainButton = findViewById(R.id.mainButton);
         mainTV = findViewById(R.id.mainTV);
 
